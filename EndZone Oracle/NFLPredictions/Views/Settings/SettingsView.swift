@@ -28,14 +28,31 @@ struct SettingsView: View {
             // Data Management
             Section("Data Management") {
                 Button(action: {
+                    Task {
+                        await predictionService.refreshFromGitHub()
+                    }
+                }) {
+                    HStack {
+                        Label("Refresh from GitHub", systemImage: "arrow.clockwise")
+                            .foregroundColor(.blue)
+                        if predictionService.isLoading {
+                            Spacer()
+                            ProgressView()
+                                .scaleEffect(0.8)
+                        }
+                    }
+                }
+                .disabled(predictionService.isLoading)
+
+                Button(action: {
                     predictionService.loadPredictionsFromBundle(filename: "predictions")
                 }) {
-                    Label("Load Latest Predictions", systemImage: "star.fill")
-                        .foregroundColor(.green)
+                    Label("Load Bundled Predictions", systemImage: "doc.fill")
+                        .foregroundColor(.secondary)
                 }
 
                 Button(action: { showingFilePicker = true }) {
-                    Label("Import Other JSON File", systemImage: "square.and.arrow.down")
+                    Label("Import JSON File", systemImage: "square.and.arrow.down")
                 }
 
                 if predictionService.currentPredictions != nil {

@@ -15,9 +15,8 @@ struct NFLPredictionsApp: App {
     @StateObject private var dataPersistenceService = DataPersistenceService()
 
     init() {
-        // Create prediction service and auto-load predictions from bundle on app launch
+        // Create prediction service - will load from GitHub on app launch
         let service = PredictionService()
-        service.loadPredictionsFromBundle(filename: "predictions")
         _predictionService = StateObject(wrappedValue: service)
     }
 

@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var predictionService: PredictionService
     @EnvironmentObject var dataPersistenceService: DataPersistenceService
-    
+
     @State private var selectedTab = 0
-    
+
     var body: some View {
         TabView(selection: $selectedTab) {
             NavigationStack {
@@ -47,6 +47,10 @@ struct ContentView: View {
                 Label("Settings", systemImage: "gear")
             }
             .tag(2)
+        }
+        .task {
+            // Auto-load predictions from GitHub on app launch
+            await predictionService.loadPredictions()
         }
     }
 }
