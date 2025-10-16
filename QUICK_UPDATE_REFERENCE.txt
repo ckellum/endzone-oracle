@@ -12,8 +12,10 @@
    cd /Users/ac09540/Desktop/Sports/NFLPredictionsApp
    ./update-predictions.sh ~/Downloads/your-new-file.json
 
-3. Open Xcode and rebuild (Cmd + R)
-4. Done! ✅
+3. Done! ✅
+   - Script pushes to GitHub
+   - Users' apps auto-download within 7 days
+   - No app rebuild needed!
 
 ───────────────────────────────────────────────────────────────
 
@@ -33,6 +35,7 @@
   ✓ Commits to Git
   ✓ Pushes to GitHub
   ✓ Shows summary
+  ✓ Users' apps auto-download within 7 days!
 
 ───────────────────────────────────────────────────────────────
 
@@ -71,6 +74,18 @@ On GitHub:
 
 ───────────────────────────────────────────────────────────────
 
-📖 FULL GUIDE: WEEKLY_PREDICTIONS_UPDATE_GUIDE.md
+🤖 AUTO-UPDATE SYSTEM:
+
+  ✓ Users' apps check GitHub every 7 days
+  ✓ Auto-download latest predictions
+  ✓ Manual refresh in Settings
+  ✓ Works offline with cache
+  ✓ No app update required!
+
+───────────────────────────────────────────────────────────────
+
+📖 FULL GUIDES:
+   - WEEKLY_PREDICTIONS_UPDATE_GUIDE.md
+   - AUTO_UPDATE_SYSTEM_GUIDE.md
 
 ═══════════════════════════════════════════════════════════════
