@@ -17,7 +17,7 @@ struct NFLPredictionsApp: App {
     init() {
         // Create prediction service and auto-load predictions from bundle on app launch
         let service = PredictionService()
-        service.loadPredictionsFromBundle(filename: "enhanced_predictions_20251014_160158")
+        service.loadPredictionsFromBundle(filename: "predictions")
         _predictionService = StateObject(wrappedValue: service)
     }
 

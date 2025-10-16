@@ -28,9 +28,9 @@ struct SettingsView: View {
             // Data Management
             Section("Data Management") {
                 Button(action: {
-                    predictionService.loadPredictionsFromBundle(filename: "enhanced_predictions_20251014_160158")
+                    predictionService.loadPredictionsFromBundle(filename: "predictions")
                 }) {
-                    Label("Load My Predictions (15 Games)", systemImage: "star.fill")
+                    Label("Load Latest Predictions", systemImage: "star.fill")
                         .foregroundColor(.green)
                 }
 
