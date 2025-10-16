@@ -1,0 +1,817 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C476A342E9F1B900034AA39 /* GameCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A212E9F1B900034AA39 /* GameCardView.swift */; };
+		3C476A352E9F1B900034AA39 /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A162E9F1B900034AA39 /* ResultsViewModel.swift */; };
+		3C476A362E9F1B900034AA39 /* TeamHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A1C2E9F1B900034AA39 /* TeamHeaderView.swift */; };
+		3C476A372E9F1B900034AA39 /* StatsDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A2B2E9F1B900034AA39 /* StatsDashboardView.swift */; };
+		3C476A382E9F1B900034AA39 /* PredictionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A0E2E9F1B900034AA39 /* PredictionService.swift */; };
+		3C476A392E9F1B900034AA39 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A112E9F1B900034AA39 /* Date+Extensions.swift */; };
+		3C476A3A2E9F1B900034AA39 /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A1B2E9F1B900034AA39 /* StatCard.swift */; };
+		3C476A3B2E9F1B900034AA39 /* AccuracyIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A192E9F1B900034AA39 /* AccuracyIndicator.swift */; };
+		3C476A3C2E9F1B900034AA39 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A102E9F1B900034AA39 /* Color+Extensions.swift */; };
+		3C476A3D2E9F1B900034AA39 /* NFLPredictionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A042E9F1B900034AA39 /* NFLPredictionsApp.swift */; };
+		3C476A3E2E9F1B900034AA39 /* NFLTeams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A132E9F1B900034AA39 /* NFLTeams.swift */; };
+		3C476A3F2E9F1B900034AA39 /* PredictionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A222E9F1B900034AA39 /* PredictionHeaderView.swift */; };
+		3C476A402E9F1B900034AA39 /* AccuracyCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A292E9F1B900034AA39 /* AccuracyCircleView.swift */; };
+		3C476A412E9F1B900034AA39 /* PredictionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A082E9F1B900034AA39 /* PredictionData.swift */; };
+		3C476A422E9F1B900034AA39 /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A072E9F1B900034AA39 /* Prediction.swift */; };
+		3C476A432E9F1B900034AA39 /* PerformanceChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A2A2E9F1B900034AA39 /* PerformanceChartView.swift */; };
+		3C476A442E9F1B900034AA39 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A0D2E9F1B900034AA39 /* PersistenceController.swift */; };
+		3C476A452E9F1B900034AA39 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A272E9F1B900034AA39 /* SettingsView.swift */; };
+		3C476A462E9F1B900034AA39 /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A172E9F1B900034AA39 /* StatsViewModel.swift */; };
+		3C476A472E9F1B900034AA39 /* ResultsEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A252E9F1B900034AA39 /* ResultsEntryView.swift */; };
+		3C476A482E9F1B900034AA39 /* PickBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A1A2E9F1B900034AA39 /* PickBadge.swift */; };
+		3C476A492E9F1B900034AA39 /* NFLPredictions.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A302E9F1B900034AA39 /* NFLPredictions.xcdatamodeld */; };
+		3C476A4A2E9F1B900034AA39 /* TeamStatsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A2C2E9F1B900034AA39 /* TeamStatsListView.swift */; };
+		3C476A4B2E9F1B900034AA39 /* PredictionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A152E9F1B900034AA39 /* PredictionsViewModel.swift */; };
+		3C476A4C2E9F1B900034AA39 /* DataPersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A0C2E9F1B900034AA39 /* DataPersistenceService.swift */; };
+		3C476A4D2E9F1B900034AA39 /* PredictionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A232E9F1B900034AA39 /* PredictionsListView.swift */; };
+		3C476A4E2E9F1B900034AA39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A032E9F1B900034AA39 /* ContentView.swift */; };
+		3C476A4F2E9F1B900034AA39 /* ComparisonTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A1E2E9F1B900034AA39 /* ComparisonTableView.swift */; };
+		3C476A502E9F1B900034AA39 /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A1F2E9F1B900034AA39 /* GameDetailView.swift */; };
+		3C476A512E9F1B900034AA39 /* GameResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A062E9F1B900034AA39 /* GameResult.swift */; };
+		3C476A522E9F1B900034AA39 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A0B2E9F1B900034AA39 /* AnalyticsService.swift */; };
+		3C476A542E9F1C000034AA39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C476A532E9F1C000034AA39 /* Assets.xcassets */; };
+		3C476A552EA0097E0034AA39 /* KalshiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A542EA0097E0034AA39 /* KalshiModels.swift */; };
+		3C476A572E9F1E000034AA39 /* enhanced_predictions_20251014_160158.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C476A562E9F1E000034AA39 /* enhanced_predictions_20251014_160158.json */; };
+		3C476A572EA00A2D0034AA39 /* KalshiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A562EA00A2D0034AA39 /* KalshiService.swift */; };
+		3C476A592EA00A7D0034AA39 /* KalshiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A582EA00A7D0034AA39 /* KalshiViewModel.swift */; };
+		3C476A5B2EA00AA40034AA39 /* KalshiOddsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C476A5A2EA00AA40034AA39 /* KalshiOddsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C4769972E9F18CF0034AA39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C47697C2E9F18CC0034AA39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C4769832E9F18CC0034AA39;
+			remoteInfo = "EndZone Oracle";
+		};
+		3C4769A12E9F18CF0034AA39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C47697C2E9F18CC0034AA39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C4769832E9F18CC0034AA39;
+			remoteInfo = "EndZone Oracle";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C4769842E9F18CC0034AA39 /* EndZone Oracle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EndZone Oracle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4769962E9F18CF0034AA39 /* EndZone OracleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EndZone OracleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4769A02E9F18CF0034AA39 /* EndZone OracleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EndZone OracleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C476A032E9F1B900034AA39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3C476A042E9F1B900034AA39 /* NFLPredictionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFLPredictionsApp.swift; sourceTree = "<group>"; };
+		3C476A062E9F1B900034AA39 /* GameResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResult.swift; sourceTree = "<group>"; };
+		3C476A072E9F1B900034AA39 /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
+		3C476A082E9F1B900034AA39 /* PredictionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionData.swift; sourceTree = "<group>"; };
+		3C476A0B2E9F1B900034AA39 /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		3C476A0C2E9F1B900034AA39 /* DataPersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceService.swift; sourceTree = "<group>"; };
+		3C476A0D2E9F1B900034AA39 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		3C476A0E2E9F1B900034AA39 /* PredictionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionService.swift; sourceTree = "<group>"; };
+		3C476A102E9F1B900034AA39 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		3C476A112E9F1B900034AA39 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		3C476A132E9F1B900034AA39 /* NFLTeams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFLTeams.swift; sourceTree = "<group>"; };
+		3C476A152E9F1B900034AA39 /* PredictionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionsViewModel.swift; sourceTree = "<group>"; };
+		3C476A162E9F1B900034AA39 /* ResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
+		3C476A172E9F1B900034AA39 /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
+		3C476A192E9F1B900034AA39 /* AccuracyIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccuracyIndicator.swift; sourceTree = "<group>"; };
+		3C476A1A2E9F1B900034AA39 /* PickBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickBadge.swift; sourceTree = "<group>"; };
+		3C476A1B2E9F1B900034AA39 /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
+		3C476A1C2E9F1B900034AA39 /* TeamHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamHeaderView.swift; sourceTree = "<group>"; };
+		3C476A1E2E9F1B900034AA39 /* ComparisonTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparisonTableView.swift; sourceTree = "<group>"; };
+		3C476A1F2E9F1B900034AA39 /* GameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
+		3C476A212E9F1B900034AA39 /* GameCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCardView.swift; sourceTree = "<group>"; };
+		3C476A222E9F1B900034AA39 /* PredictionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionHeaderView.swift; sourceTree = "<group>"; };
+		3C476A232E9F1B900034AA39 /* PredictionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionsListView.swift; sourceTree = "<group>"; };
+		3C476A252E9F1B900034AA39 /* ResultsEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsEntryView.swift; sourceTree = "<group>"; };
+		3C476A272E9F1B900034AA39 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3C476A292E9F1B900034AA39 /* AccuracyCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccuracyCircleView.swift; sourceTree = "<group>"; };
+		3C476A2A2E9F1B900034AA39 /* PerformanceChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceChartView.swift; sourceTree = "<group>"; };
+		3C476A2B2E9F1B900034AA39 /* StatsDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsDashboardView.swift; sourceTree = "<group>"; };
+		3C476A2C2E9F1B900034AA39 /* TeamStatsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamStatsListView.swift; sourceTree = "<group>"; };
+		3C476A2F2E9F1B900034AA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C476A322E9F1B900034AA39 /* NFLPredictions.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NFLPredictions.xcdatamodel; sourceTree = "<group>"; };
+		3C476A532E9F1C000034AA39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C476A542EA0097E0034AA39 /* KalshiModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalshiModels.swift; sourceTree = "<group>"; };
+		3C476A552E9F1D000034AA39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C476A562E9F1E000034AA39 /* enhanced_predictions_20251014_160158.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = enhanced_predictions_20251014_160158.json; sourceTree = "<group>"; };
+		3C476A562EA00A2D0034AA39 /* KalshiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalshiService.swift; sourceTree = "<group>"; };
+		3C476A582EA00A7D0034AA39 /* KalshiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalshiViewModel.swift; sourceTree = "<group>"; };
+		3C476A5A2EA00AA40034AA39 /* KalshiOddsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalshiOddsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C4769812E9F18CC0034AA39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4769932E9F18CF0034AA39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C47699D2E9F18CF0034AA39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C47697B2E9F18CC0034AA39 = {
+			isa = PBXGroup;
+			children = (
+				3C476A312E9F1B900034AA39 /* NFLPredictions */,
+				3C4769852E9F18CC0034AA39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C4769852E9F18CC0034AA39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C4769842E9F18CC0034AA39 /* EndZone Oracle.app */,
+				3C4769962E9F18CF0034AA39 /* EndZone OracleTests.xctest */,
+				3C4769A02E9F18CF0034AA39 /* EndZone OracleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C476A052E9F1B900034AA39 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3C476A032E9F1B900034AA39 /* ContentView.swift */,
+				3C476A042E9F1B900034AA39 /* NFLPredictionsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3C476A092E9F1B900034AA39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C476A542EA0097E0034AA39 /* KalshiModels.swift */,
+				3C476A062E9F1B900034AA39 /* GameResult.swift */,
+				3C476A072E9F1B900034AA39 /* Prediction.swift */,
+				3C476A082E9F1B900034AA39 /* PredictionData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C476A0A2E9F1B900034AA39 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3C476A552E9F1D000034AA39 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3C476A0F2E9F1B900034AA39 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3C476A562EA00A2D0034AA39 /* KalshiService.swift */,
+				3C476A0B2E9F1B900034AA39 /* AnalyticsService.swift */,
+				3C476A0C2E9F1B900034AA39 /* DataPersistenceService.swift */,
+				3C476A0D2E9F1B900034AA39 /* PersistenceController.swift */,
+				3C476A0E2E9F1B900034AA39 /* PredictionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3C476A122E9F1B900034AA39 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3C476A102E9F1B900034AA39 /* Color+Extensions.swift */,
+				3C476A112E9F1B900034AA39 /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3C476A142E9F1B900034AA39 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3C476A122E9F1B900034AA39 /* Extensions */,
+				3C476A132E9F1B900034AA39 /* NFLTeams.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3C476A182E9F1B900034AA39 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3C476A582EA00A7D0034AA39 /* KalshiViewModel.swift */,
+				3C476A152E9F1B900034AA39 /* PredictionsViewModel.swift */,
+				3C476A162E9F1B900034AA39 /* ResultsViewModel.swift */,
+				3C476A172E9F1B900034AA39 /* StatsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3C476A1D2E9F1B900034AA39 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3C476A5A2EA00AA40034AA39 /* KalshiOddsView.swift */,
+				3C476A192E9F1B900034AA39 /* AccuracyIndicator.swift */,
+				3C476A1A2E9F1B900034AA39 /* PickBadge.swift */,
+				3C476A1B2E9F1B900034AA39 /* StatCard.swift */,
+				3C476A1C2E9F1B900034AA39 /* TeamHeaderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3C476A202E9F1B900034AA39 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3C476A1E2E9F1B900034AA39 /* ComparisonTableView.swift */,
+				3C476A1F2E9F1B900034AA39 /* GameDetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		3C476A242E9F1B900034AA39 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3C476A212E9F1B900034AA39 /* GameCardView.swift */,
+				3C476A222E9F1B900034AA39 /* PredictionHeaderView.swift */,
+				3C476A232E9F1B900034AA39 /* PredictionsListView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3C476A262E9F1B900034AA39 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				3C476A252E9F1B900034AA39 /* ResultsEntryView.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		3C476A282E9F1B900034AA39 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3C476A272E9F1B900034AA39 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		3C476A2D2E9F1B900034AA39 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				3C476A292E9F1B900034AA39 /* AccuracyCircleView.swift */,
+				3C476A2A2E9F1B900034AA39 /* PerformanceChartView.swift */,
+				3C476A2B2E9F1B900034AA39 /* StatsDashboardView.swift */,
+				3C476A2C2E9F1B900034AA39 /* TeamStatsListView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		3C476A2E2E9F1B900034AA39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C476A1D2E9F1B900034AA39 /* Components */,
+				3C476A202E9F1B900034AA39 /* Detail */,
+				3C476A242E9F1B900034AA39 /* Home */,
+				3C476A262E9F1B900034AA39 /* Results */,
+				3C476A282E9F1B900034AA39 /* Settings */,
+				3C476A2D2E9F1B900034AA39 /* Stats */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C476A312E9F1B900034AA39 /* NFLPredictions */ = {
+			isa = PBXGroup;
+			children = (
+				3C476A052E9F1B900034AA39 /* App */,
+				3C476A532E9F1C000034AA39 /* Assets.xcassets */,
+				3C476A562E9F1E000034AA39 /* enhanced_predictions_20251014_160158.json */,
+				3C476A092E9F1B900034AA39 /* Models */,
+				3C476A0A2E9F1B900034AA39 /* Preview Content */,
+				3C476A0F2E9F1B900034AA39 /* Services */,
+				3C476A142E9F1B900034AA39 /* Utilities */,
+				3C476A182E9F1B900034AA39 /* ViewModels */,
+				3C476A2E2E9F1B900034AA39 /* Views */,
+				3C476A2F2E9F1B900034AA39 /* Info.plist */,
+				3C476A302E9F1B900034AA39 /* NFLPredictions.xcdatamodeld */,
+			);
+			path = NFLPredictions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C4769832E9F18CC0034AA39 /* EndZone Oracle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4769AA2E9F18CF0034AA39 /* Build configuration list for PBXNativeTarget "EndZone Oracle" */;
+			buildPhases = (
+				3C4769802E9F18CC0034AA39 /* Sources */,
+				3C4769812E9F18CC0034AA39 /* Frameworks */,
+				3C4769822E9F18CC0034AA39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EndZone Oracle";
+			packageProductDependencies = (
+			);
+			productName = "EndZone Oracle";
+			productReference = 3C4769842E9F18CC0034AA39 /* EndZone Oracle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C4769952E9F18CF0034AA39 /* EndZone OracleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4769AD2E9F18CF0034AA39 /* Build configuration list for PBXNativeTarget "EndZone OracleTests" */;
+			buildPhases = (
+				3C4769922E9F18CF0034AA39 /* Sources */,
+				3C4769932E9F18CF0034AA39 /* Frameworks */,
+				3C4769942E9F18CF0034AA39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C4769982E9F18CF0034AA39 /* PBXTargetDependency */,
+			);
+			name = "EndZone OracleTests";
+			packageProductDependencies = (
+			);
+			productName = "EndZone OracleTests";
+			productReference = 3C4769962E9F18CF0034AA39 /* EndZone OracleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C47699F2E9F18CF0034AA39 /* EndZone OracleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4769B02E9F18CF0034AA39 /* Build configuration list for PBXNativeTarget "EndZone OracleUITests" */;
+			buildPhases = (
+				3C47699C2E9F18CF0034AA39 /* Sources */,
+				3C47699D2E9F18CF0034AA39 /* Frameworks */,
+				3C47699E2E9F18CF0034AA39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C4769A22E9F18CF0034AA39 /* PBXTargetDependency */,
+			);
+			name = "EndZone OracleUITests";
+			packageProductDependencies = (
+			);
+			productName = "EndZone OracleUITests";
+			productReference = 3C4769A02E9F18CF0034AA39 /* EndZone OracleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C47697C2E9F18CC0034AA39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					3C4769832E9F18CC0034AA39 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					3C4769952E9F18CF0034AA39 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 3C4769832E9F18CC0034AA39;
+					};
+					3C47699F2E9F18CF0034AA39 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 3C4769832E9F18CC0034AA39;
+					};
+				};
+			};
+			buildConfigurationList = 3C47697F2E9F18CC0034AA39 /* Build configuration list for PBXProject "EndZone Oracle" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C47697B2E9F18CC0034AA39;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3C4769852E9F18CC0034AA39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C4769832E9F18CC0034AA39 /* EndZone Oracle */,
+				3C4769952E9F18CF0034AA39 /* EndZone OracleTests */,
+				3C47699F2E9F18CF0034AA39 /* EndZone OracleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C4769822E9F18CC0034AA39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C476A542E9F1C000034AA39 /* Assets.xcassets in Resources */,
+				3C476A572E9F1E000034AA39 /* enhanced_predictions_20251014_160158.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4769942E9F18CF0034AA39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C47699E2E9F18CF0034AA39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C4769802E9F18CC0034AA39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C476A592EA00A7D0034AA39 /* KalshiViewModel.swift in Sources */,
+				3C476A342E9F1B900034AA39 /* GameCardView.swift in Sources */,
+				3C476A352E9F1B900034AA39 /* ResultsViewModel.swift in Sources */,
+				3C476A362E9F1B900034AA39 /* TeamHeaderView.swift in Sources */,
+				3C476A372E9F1B900034AA39 /* StatsDashboardView.swift in Sources */,
+				3C476A382E9F1B900034AA39 /* PredictionService.swift in Sources */,
+				3C476A392E9F1B900034AA39 /* Date+Extensions.swift in Sources */,
+				3C476A3A2E9F1B900034AA39 /* StatCard.swift in Sources */,
+				3C476A3B2E9F1B900034AA39 /* AccuracyIndicator.swift in Sources */,
+				3C476A3C2E9F1B900034AA39 /* Color+Extensions.swift in Sources */,
+				3C476A3D2E9F1B900034AA39 /* NFLPredictionsApp.swift in Sources */,
+				3C476A572EA00A2D0034AA39 /* KalshiService.swift in Sources */,
+				3C476A3E2E9F1B900034AA39 /* NFLTeams.swift in Sources */,
+				3C476A3F2E9F1B900034AA39 /* PredictionHeaderView.swift in Sources */,
+				3C476A402E9F1B900034AA39 /* AccuracyCircleView.swift in Sources */,
+				3C476A5B2EA00AA40034AA39 /* KalshiOddsView.swift in Sources */,
+				3C476A552EA0097E0034AA39 /* KalshiModels.swift in Sources */,
+				3C476A412E9F1B900034AA39 /* PredictionData.swift in Sources */,
+				3C476A422E9F1B900034AA39 /* Prediction.swift in Sources */,
+				3C476A432E9F1B900034AA39 /* PerformanceChartView.swift in Sources */,
+				3C476A442E9F1B900034AA39 /* PersistenceController.swift in Sources */,
+				3C476A452E9F1B900034AA39 /* SettingsView.swift in Sources */,
+				3C476A462E9F1B900034AA39 /* StatsViewModel.swift in Sources */,
+				3C476A472E9F1B900034AA39 /* ResultsEntryView.swift in Sources */,
+				3C476A482E9F1B900034AA39 /* PickBadge.swift in Sources */,
+				3C476A492E9F1B900034AA39 /* NFLPredictions.xcdatamodeld in Sources */,
+				3C476A4A2E9F1B900034AA39 /* TeamStatsListView.swift in Sources */,
+				3C476A4B2E9F1B900034AA39 /* PredictionsViewModel.swift in Sources */,
+				3C476A4C2E9F1B900034AA39 /* DataPersistenceService.swift in Sources */,
+				3C476A4D2E9F1B900034AA39 /* PredictionsListView.swift in Sources */,
+				3C476A4E2E9F1B900034AA39 /* ContentView.swift in Sources */,
+				3C476A4F2E9F1B900034AA39 /* ComparisonTableView.swift in Sources */,
+				3C476A502E9F1B900034AA39 /* GameDetailView.swift in Sources */,
+				3C476A512E9F1B900034AA39 /* GameResult.swift in Sources */,
+				3C476A522E9F1B900034AA39 /* AnalyticsService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4769922E9F18CF0034AA39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C47699C2E9F18CF0034AA39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C4769982E9F18CF0034AA39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C4769832E9F18CC0034AA39 /* EndZone Oracle */;
+			targetProxy = 3C4769972E9F18CF0034AA39 /* PBXContainerItemProxy */;
+		};
+		3C4769A22E9F18CF0034AA39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C4769832E9F18CC0034AA39 /* EndZone Oracle */;
+			targetProxy = 3C4769A12E9F18CF0034AA39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3C4769A82E9F18CF0034AA39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C4769A92E9F18CF0034AA39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C4769AB2E9F18CF0034AA39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NFLPredictions/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NFLPredictions/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "endzoneoracle.com.EndZone-Oracle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C4769AC2E9F18CF0034AA39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NFLPredictions/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NFLPredictions/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "endzoneoracle.com.EndZone-Oracle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C4769AE2E9F18CF0034AA39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "endzoneoracle.com.EndZone-OracleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EndZone Oracle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EndZone Oracle";
+			};
+			name = Debug;
+		};
+		3C4769AF2E9F18CF0034AA39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "endzoneoracle.com.EndZone-OracleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EndZone Oracle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EndZone Oracle";
+			};
+			name = Release;
+		};
+		3C4769B12E9F18CF0034AA39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "endzoneoracle.com.EndZone-OracleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "EndZone Oracle";
+			};
+			name = Debug;
+		};
+		3C4769B22E9F18CF0034AA39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "endzoneoracle.com.EndZone-OracleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "EndZone Oracle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C47697F2E9F18CC0034AA39 /* Build configuration list for PBXProject "EndZone Oracle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4769A82E9F18CF0034AA39 /* Debug */,
+				3C4769A92E9F18CF0034AA39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C4769AA2E9F18CF0034AA39 /* Build configuration list for PBXNativeTarget "EndZone Oracle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4769AB2E9F18CF0034AA39 /* Debug */,
+				3C4769AC2E9F18CF0034AA39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C4769AD2E9F18CF0034AA39 /* Build configuration list for PBXNativeTarget "EndZone OracleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4769AE2E9F18CF0034AA39 /* Debug */,
+				3C4769AF2E9F18CF0034AA39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C4769B02E9F18CF0034AA39 /* Build configuration list for PBXNativeTarget "EndZone OracleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4769B12E9F18CF0034AA39 /* Debug */,
+				3C4769B22E9F18CF0034AA39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3C476A302E9F1B900034AA39 /* NFLPredictions.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3C476A322E9F1B900034AA39 /* NFLPredictions.xcdatamodel */,
+			);
+			currentVersion = 3C476A322E9F1B900034AA39 /* NFLPredictions.xcdatamodel */;
+			path = NFLPredictions.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3C47697C2E9F18CC0034AA39 /* Project object */;
+}

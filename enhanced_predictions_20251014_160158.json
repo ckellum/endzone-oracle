@@ -1,0 +1,157 @@
+{
+  "generated_at": "2025-10-14T16:01:58.087500",
+  "timestamp": "20251014_160158",
+  "model_version": "EnhancedNFLPredictionModel_v1.0",
+  "data_sources": {
+    "offensive_stats": "nfl_offensive_stats_20251014_142752.csv",
+    "defensive_stats": "nfl_defensive_stats_20251014_142755.csv"
+  },
+  "statistics": {
+    "total_games": 15,
+    "outliers_detected": 0,
+    "avg_total_points": 45.4,
+    "min_total_points": 38,
+    "max_total_points": 56,
+    "avg_point_differential": 3.0,
+    "max_spread": 10,
+    "games_with_ties": 2,
+    "games_40_50_points": 10
+  },
+  "predictions": [
+    {
+      "team1": "Pittsburgh Steelers",
+      "team1_predicted_points": 21,
+      "team2": "Cincinnati Bengals",
+      "team2_predicted_points": 18,
+      "predicted_winner": "Pittsburgh Steelers",
+      "point_differential": 3,
+      "total_points": 39
+    },
+    {
+      "team1": "Los Angeles Rams",
+      "team1_predicted_points": 25,
+      "team2": "Jacksonville Jaguars",
+      "team2_predicted_points": 26,
+      "predicted_winner": "Jacksonville Jaguars",
+      "point_differential": 1,
+      "total_points": 51
+    },
+    {
+      "team1": "New Orleans Saints",
+      "team1_predicted_points": 20,
+      "team2": "Chicago Bears",
+      "team2_predicted_points": 18,
+      "predicted_winner": "New Orleans Saints",
+      "point_differential": 2,
+      "total_points": 38
+    },
+    {
+      "team1": "Miami Dolphins",
+      "team1_predicted_points": 28,
+      "team2": "Cleveland Browns",
+      "team2_predicted_points": 18,
+      "predicted_winner": "Miami Dolphins",
+      "point_differential": 10,
+      "total_points": 46
+    },
+    {
+      "team1": "New England Patriots",
+      "team1_predicted_points": 22,
+      "team2": "Tennessee Titans",
+      "team2_predicted_points": 18,
+      "predicted_winner": "New England Patriots",
+      "point_differential": 4,
+      "total_points": 40
+    },
+    {
+      "team1": "Las Vegas Raiders",
+      "team1_predicted_points": 20,
+      "team2": "Kansas City Chiefs",
+      "team2_predicted_points": 26,
+      "predicted_winner": "Kansas City Chiefs",
+      "point_differential": 6,
+      "total_points": 46
+    },
+    {
+      "team1": "Philadelphia Eagles",
+      "team1_predicted_points": 23,
+      "team2": "Minnesota Vikings",
+      "team2_predicted_points": 23,
+      "predicted_winner": "TIE",
+      "point_differential": 0,
+      "total_points": 46
+    },
+    {
+      "team1": "Carolina Panthers",
+      "team1_predicted_points": 21,
+      "team2": "New York Jets",
+      "team2_predicted_points": 19,
+      "predicted_winner": "Carolina Panthers",
+      "point_differential": 2,
+      "total_points": 40
+    },
+    {
+      "team1": "New York Giants",
+      "team1_predicted_points": 23,
+      "team2": "Denver Broncos",
+      "team2_predicted_points": 24,
+      "predicted_winner": "Denver Broncos",
+      "point_differential": 1,
+      "total_points": 47
+    },
+    {
+      "team1": "Indianapolis Colts",
+      "team1_predicted_points": 27,
+      "team2": "Los Angeles Chargers",
+      "team2_predicted_points": 21,
+      "predicted_winner": "Indianapolis Colts",
+      "point_differential": 6,
+      "total_points": 48
+    },
+    {
+      "team1": "Washington Commanders",
+      "team1_predicted_points": 28,
+      "team2": "Dallas Cowboys",
+      "team2_predicted_points": 27,
+      "predicted_winner": "Washington Commanders",
+      "point_differential": 1,
+      "total_points": 55
+    },
+    {
+      "team1": "Green Bay Packers",
+      "team1_predicted_points": 23,
+      "team2": "Arizona Cardinals",
+      "team2_predicted_points": 22,
+      "predicted_winner": "Green Bay Packers",
+      "point_differential": 1,
+      "total_points": 45
+    },
+    {
+      "team1": "Atlanta Falcons",
+      "team1_predicted_points": 20,
+      "team2": "San Francisco 49ers",
+      "team2_predicted_points": 21,
+      "predicted_winner": "San Francisco 49ers",
+      "point_differential": 1,
+      "total_points": 41
+    },
+    {
+      "team1": "Tampa Bay Buccaneers",
+      "team1_predicted_points": 28,
+      "team2": "Detroit Lions",
+      "team2_predicted_points": 28,
+      "predicted_winner": "TIE",
+      "point_differential": 0,
+      "total_points": 56
+    },
+    {
+      "team1": "Houston Texans",
+      "team1_predicted_points": 18,
+      "team2": "Seattle Seahawks",
+      "team2_predicted_points": 25,
+      "predicted_winner": "Seattle Seahawks",
+      "point_differential": 7,
+      "total_points": 43
+    }
+  ]
+}
