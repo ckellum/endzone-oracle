@@ -31,40 +31,46 @@ class KalshiService: ObservableObject {
     
     /// Fetch all NFL markets
     func fetchNFLMarkets() async throws -> [KalshiMarket] {
+        // Silently return empty if no credentials configured
         guard let keyID = apiKeyID, !keyID.isEmpty,
               let privKey = privateKey, !privKey.isEmpty else {
-            throw KalshiError.unauthorized
+            // No credentials - return empty array instead of throwing
+            // This allows the app to work without Kalshi integration
+            return []
         }
-        
+
         await MainActor.run {
             isLoading = true
             error = nil
         }
-        
+
         defer {
             Task { @MainActor in
                 isLoading = false
             }
         }
-        
+
         // Try different potential endpoints for NFL data
         let seriesTickers = ["NFL", "FOOTBALL", "NFLGAME"]
         var allMarkets: [KalshiMarket] = []
-        
+
         for ticker in seriesTickers {
             do {
                 let markets = try await fetchMarkets(seriesTicker: ticker)
                 allMarkets.append(contentsOf: markets)
             } catch {
-                // Continue trying other tickers
+                // Continue trying other tickers - don't print errors in production
+                // This reduces console spam when credentials aren't configured
+                #if DEBUG
                 print("Failed to fetch markets for \(ticker): \(error)")
+                #endif
             }
         }
-        
+
         await MainActor.run {
             self.markets = allMarkets
         }
-        
+
         return allMarkets
     }
     
