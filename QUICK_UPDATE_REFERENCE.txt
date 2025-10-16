@@ -14,7 +14,7 @@
 
 3. Done! ✅
    - Script pushes to GitHub
-   - Users' apps auto-download within 7 days
+   - Users' apps auto-download within 12 hours
    - No app rebuild needed!
 
 ───────────────────────────────────────────────────────────────
@@ -35,7 +35,7 @@
   ✓ Commits to Git
   ✓ Pushes to GitHub
   ✓ Shows summary
-  ✓ Users' apps auto-download within 7 days!
+  ✓ Users' apps auto-download within 12 hours!
 
 ───────────────────────────────────────────────────────────────
 
@@ -76,7 +76,7 @@ On GitHub:
 
 🤖 AUTO-UPDATE SYSTEM:
 
-  ✓ Users' apps check GitHub every 7 days
+  ✓ Users' apps check GitHub every 12 hours
   ✓ Auto-download latest predictions
   ✓ Manual refresh in Settings
   ✓ Works offline with cache

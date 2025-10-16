@@ -16,8 +16,9 @@ Your app now **automatically fetches the latest predictions from GitHub** every 
    - Downloads new predictions if available
    - Shows predictions immediately
 
-2. **Weekly Updates:**
-   - Every 7 days, app auto-fetches latest predictions
+2. **Automatic Updates:**
+   - Every 12 hours, app auto-fetches latest predictions
+   - Users always have fresh data
    - No manual action required
    - Seamless experience
 
@@ -82,8 +83,8 @@ cd /Users/ac09540/Desktop/Sports/NFLPredictionsApp
 ### **What Happens Next:**
 
 - ✅ predictions.json is now on GitHub
-- ✅ All users' apps will auto-download it within 7 days
-- ✅ Users on Settings can manually refresh immediately
+- ✅ All users' apps will auto-download it within 12 hours
+- ✅ Users can manually refresh immediately in Settings
 - ✅ No app update needed!
 
 ---
@@ -99,9 +100,9 @@ https://raw.githubusercontent.com/ckellum/endzone-oracle/main/EndZone%20Oracle/N
 
 ### **Update Frequency:**
 
-- **Automatic:** Every 7 days
+- **Automatic:** Every 12 hours
 - **Manual:** User can trigger anytime via Settings
-- **On Launch:** Always checks if 7+ days since last update
+- **On Launch:** Always checks if 12+ hours since last update
 
 ### **Caching:**
 
@@ -369,9 +370,10 @@ Before pushing:
 
 ### **Automatic (Users):**
 
-- **Every 7 days:** App checks for updates
-- **On app launch:** If 7+ days passed
+- **Every 12 hours:** App checks for updates
+- **On app launch:** If 12+ hours passed
 - **Background:** Happens automatically
+- **Fresh data:** Users always have current predictions
 
 ### **Manual (You):**
 
@@ -387,7 +389,7 @@ Before pushing:
 1. Update predictions.json on GitHub (one command)
 
 **What Happens Automatically:**
-1. All users get new predictions within 7 days
+1. All users get new predictions within 12 hours
 2. Users can manually refresh anytime
 3. Works offline with cached data
 4. No app update required

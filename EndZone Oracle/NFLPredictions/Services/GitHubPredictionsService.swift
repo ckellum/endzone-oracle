@@ -28,14 +28,14 @@ class GitHubPredictionsService: ObservableObject {
         }
     }
 
-    /// Check if predictions should be updated (every 7 days)
+    /// Check if predictions should be updated (every 12 hours)
     func shouldCheckForUpdate() -> Bool {
         guard let lastUpdate = lastUpdateDate else {
             return true // Never updated before
         }
 
-        let daysSinceUpdate = Calendar.current.dateComponents([.day], from: lastUpdate, to: Date()).day ?? 0
-        return daysSinceUpdate >= 7
+        let hoursSinceUpdate = Calendar.current.dateComponents([.hour], from: lastUpdate, to: Date()).hour ?? 0
+        return hoursSinceUpdate >= 12
     }
 
     /// Fetch latest predictions from GitHub
