@@ -9,8 +9,8 @@ import Foundation
 
 class GitHubPredictionsService: ObservableObject {
     // GitHub raw content URL for predictions.json
-    // Format: https://raw.githubusercontent.com/USERNAME/REPO/BRANCH/path/to/file
-    private let githubRawURL = "https://raw.githubusercontent.com/ckellum/endzone-oracle/main/EndZone%20Oracle/NFLPredictions/predictions.json"
+    // Using github.com/USER/REPO/raw/BRANCH format which handles spaces better
+    private let githubRawURL = "https://github.com/ckellum/endzone-oracle/raw/main/EndZone%20Oracle/NFLPredictions/predictions.json"
 
     @Published var isLoading = false
     @Published var lastUpdateDate: Date?
@@ -40,11 +40,13 @@ class GitHubPredictionsService: ObservableObject {
 
     /// Fetch latest predictions from GitHub
     func fetchLatestPredictions() async throws -> PredictionData {
-        isLoading = true
-        errorMessage = nil
+        await MainActor.run {
+            isLoading = true
+            errorMessage = nil
+        }
 
         defer {
-            DispatchQueue.main.async {
+            Task { @MainActor in
                 self.isLoading = false
             }
         }
@@ -75,7 +77,7 @@ class GitHubPredictionsService: ObservableObject {
         let predictions = try decoder.decode(PredictionData.self, from: data)
 
         // Cache the data and update timestamp
-        DispatchQueue.main.async {
+        await MainActor.run {
             self.cachePredictions(data)
             self.lastUpdateDate = Date()
             self.userDefaults.set(Date(), forKey: self.lastUpdateKey)
