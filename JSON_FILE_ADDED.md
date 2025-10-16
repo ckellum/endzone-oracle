@@ -14,6 +14,7 @@ Added new method to `PredictionService.swift`:
 ```swift
 func loadPredictionsFromBundle(filename: String)
 ```
+testingo for git
 
 This loads JSON files directly from the app bundle (no file picker needed!)
 
