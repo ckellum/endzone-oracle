@@ -1,0 +1,76 @@
+═══════════════════════════════════════════════════════════════
+  🏈 ENDZONE ORACLE - WEEKLY PREDICTIONS UPDATE QUICK REFERENCE
+═══════════════════════════════════════════════════════════════
+
+📅 WHEN: Update every Monday with new week's games
+
+⚡ QUICK UPDATE (30 seconds):
+
+1. Place new predictions JSON in Downloads
+2. Open Terminal and run:
+
+   cd /Users/ac09540/Desktop/Sports/NFLPredictionsApp
+   ./update-predictions.sh ~/Downloads/your-new-file.json
+
+3. Open Xcode and rebuild (Cmd + R)
+4. Done! ✅
+
+───────────────────────────────────────────────────────────────
+
+📂 FILES:
+
+  predictions.json         ← The file that updates weekly
+  update-predictions.sh    ← The script to run
+  predictions_archive/     ← Automatic backups
+
+───────────────────────────────────────────────────────────────
+
+🎯 WHAT THE SCRIPT DOES:
+
+  ✓ Validates JSON format
+  ✓ Backs up current predictions
+  ✓ Updates predictions.json
+  ✓ Commits to Git
+  ✓ Pushes to GitHub
+  ✓ Shows summary
+
+───────────────────────────────────────────────────────────────
+
+📱 USING CURSOR:
+
+1. Drag new JSON to: EndZone Oracle/NFLPredictions/
+2. Rename to: predictions.json (replace existing)
+3. Cmd + Shift + G (open Source Control)
+4. Click + to stage
+5. Type: "Update weekly predictions"
+6. Cmd + Enter (commit)
+7. Click ↻ sync button (push)
+8. Rebuild in Xcode
+
+───────────────────────────────────────────────────────────────
+
+🔍 VERIFY UPDATE:
+
+In App (Settings tab):
+  - Check "Timestamp" is current week
+  - Check "Generated" date is recent
+  - Check game count
+
+On GitHub:
+  - Visit: https://github.com/ckellum/endzone-oracle
+  - Verify latest commit shows update
+
+───────────────────────────────────────────────────────────────
+
+🚨 TROUBLESHOOTING:
+
+"Invalid JSON"     → Validate at jsonlint.com
+"File not found"   → Check path, use tab-completion
+"Git push fails"   → Run git pull, then git push
+"App not updated"  → Clean build (Shift+Cmd+K), rebuild
+
+───────────────────────────────────────────────────────────────
+
+📖 FULL GUIDE: WEEKLY_PREDICTIONS_UPDATE_GUIDE.md
+
+═══════════════════════════════════════════════════════════════
